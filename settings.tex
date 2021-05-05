@@ -1,4 +1,4 @@
-\documentclass[a4paper,12pt]{article}        
+\documentclass[a4paper,12pt]{article} 
 \usepackage{geometry}           % пакет для задания полей страницы командой \geometry
 \geometry{left=3cm,right=1.5cm,top=2cm,bottom=2cm}
 % \usepackage[cp1251]{inputenc}   % кодировка текста
@@ -18,8 +18,15 @@
 \usepackage{array}              % нужен для создания таблиц
 
 \usepackage{titlesec}
+\usepackage{graphicx}
+   
+\usepackage{subcaption}   
 
 \titleformat{\section}[block]{\centering\bfseries\huge}{Глава \thesection.}{1em}{}
+\usepackage{caption}
+\renewcommand{\thefigure}{\thesubsection.\arabic{figure}}
+\DeclareCaptionLabelSeparator{bar}{\space--\space}
+\captionsetup{labelsep=bar,justification=centering}
 
 \linespread{1.3}                % полтора интервала. Если 1.6, то два интервала
 \pagestyle{plain}               % номерует страницы

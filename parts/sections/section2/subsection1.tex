@@ -107,5 +107,60 @@
         \caption{Блок-схема расположения основанного на сетке}
         \label{fig:my_label}
     \end{figure}
+    \newpage
+    \item 
+    \textbf{Метод основанный на плотнейшей упаковке} \newline
+    Данный метод позволяет добиться максимальной упаковки окружностей на площади. Для того, чтобы увеличить максимальную плотность возможного расположения сфер на площади, следует прибегнуть к плотнейшим упаковкам (раздел \ref{subsubsect:tight_packing}). \newline
+    Алгоритм:
+    \begin{enumerate}[label=\arabic*)]
+        \item 
+        Определить следующий полный квадрат $perfect\_square$ после количества окружностей $circle\_count$, которые необходимо расположить, и его корень \newline $perfect\_square\_root$.
+        \item 
+        Создать сетку из ячеек в $perfect\_square\_root \times perfect\_square\_root$ распределенную по пространству методом плотнейшей упаковки.
+        \item
+        Растянуть все сферы на полное пространство.
+        \item
+        Перемешать выбранные сферы на плоскости.
+    \end{enumerate}
+    
+    \newcommand{\imgsize}{6cm}
+    \newcommand{\imgsubdir}{tight_packing}
+    \begin{figure}[h!]
+        \begin{subfigure}{0.49\textwidth}
+            \centering
+            \includegraphics [width=\imgsize,height=\imgsize]
+            {figures/\imgsubdir/90_packing.png}
+            \caption{Шаров $90$, до перемешивания}
+        \end{subfigure}
+        \begin{subfigure}{0.49\textwidth}
+            \centering
+            \includegraphics [width=\imgsize,height=\imgsize]
+            {figures/\imgsubdir/90_shuffeling.png}
+            \caption{Шаров $90$, после перемешивания}
+        \end{subfigure}
+        \begin{subfigure}{0.49\textwidth}
+            \centering
+            \includegraphics [width=\imgsize,height=\imgsize]
+            {figures/\imgsubdir/105_packing.png}
+            \caption{Шаров $105$, до перемешивания}
+        \end{subfigure}
+        \begin{subfigure}{0.49\textwidth}
+            \centering
+            \includegraphics [width=\imgsize,height=\imgsize]
+            {figures/\imgsubdir/105_shuffeling.png}
+            \caption{Шаров $105$, после перемешивания}
+        \end{subfigure}
+        \caption{Расположение шаров}
+        \label{fig:tight_packing}
+    \end{figure}
+    На изображениях \ref{fig:tight_packing} можно увидеть, что при расположении элементов в порядке плотнейшей упаковки можно добиться большей плотности. При том-же размере пространства при помощи плотнейшей упаковки вместо 81 сфер можно расположить до 105. 
+    \begin{figure}[h!]
+        \centering
+        \includegraphics
+        [width=15cm,height=20cm]
+        {figures/\imgsubdir/block_scheme.png}
+        \caption{Блок-схема расположения основанного на сетке}
+        \label{fig:my_label}
+    \end{figure}
 \end{enumerate}
 

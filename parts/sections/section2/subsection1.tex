@@ -154,13 +154,17 @@
         \label{fig:tight_packing}
     \end{figure}
     На изображениях \ref{fig:tight_packing} можно увидеть, что при расположении элементов в порядке плотнейшей упаковки можно добиться большей плотности. При том-же размере пространства при помощи плотнейшей упаковки вместо 81 сфер можно расположить до 105. 
-    \begin{figure}[h!]
-        \centering
-        \includegraphics
-        [width=15cm,height=20cm]
-        {figures/\imgsubdir/block_scheme.png}
-        \caption{Блок-схема расположения основанного на сетке}
-        \label{fig:my_label}
-    \end{figure}
+
 \end{enumerate}
 
+В результате тестов на максимальную плотность упаковки, алгоритмы основывающиеся на плотнейшей упаковке оказываются лучшими, поэтому для трёхмерный объектов также выбран метод плотнейших упаковок.
+
+\newcommand{\imgsubdir}{tight_packing}
+\begin{figure}[h!]
+    \centering
+    \includegraphics
+    [width=15cm,height=20cm]
+    {figures/\imgsubdir/block_scheme.png}
+    \caption{Блок-схема расположения основанного на сетке}
+    \label{fig:my_label}
+\end{figure}
